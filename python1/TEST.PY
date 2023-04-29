@@ -1,5 +1,3 @@
-hauteur = int(input("Entrez la hauteur de la pyramide : ")) # Demande la hauteur de la pyramide à l'utilisateur
-
-for i in range(1, hauteur+1): # Boucle pour parcourir les lignes de la pyramide
-    print(" "*(hauteur-i), end="") # Affiche des espaces pour centrer la ligne
-    print("*"*(2*i-1)) # Affiche les étoiles de la ligne
+test= "123456789(rtlkjkjgriu§riè§ryhyuy)"
+if "jgriu9" in test:
+    print("ok")
