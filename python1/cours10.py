@@ -1,3 +1,19 @@
+def ex1():
+    MyList = []
+    for i in range(5):
+        MyList.append(input())
+    for j in MyList:
+        print(j, end=' ') # end = ('\n')
+        
+
+
+
+def ex2():
+    a = input()
+    b = input()
+    c = input()
+    print(a,b,c)
+    print(a,b,c,sep="*") # replace les virgules par la valeure de sep
 import inquirer
 import time
 
@@ -37,17 +53,14 @@ def ex():
         Fahrenheit = float(input("enter the Celcius value here: "))
         print(f"{Fahrenheit} Fahrenheit into Celcius is : {(Fahrenheit - 32) / 1.8}")
     
-    
-    
 def pita(a,b):
     c = (a**2 + b **2)**(1/2)
     print(f" l'aire du triangle est {(a*b/2)}")
     print(f"les perimetre du triangle est {a + b+ c}")    
-
 if __name__ == "__main__": # vérité absolue 
     
     while True:
-        pita(523,564)
+        ex()
         time.sleep(3) # attendre 3 sencondes
 
 
@@ -55,3 +68,4 @@ if __name__ == "__main__": # vérité absolue
 
     
     
+            
