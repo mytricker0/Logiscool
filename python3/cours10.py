@@ -58,7 +58,25 @@ def f(number):
     if number == 0:
         return 0
     else:
-        return number % 10 + f(int(number / 10))
+        return number % 10 + f(int(number / 10)) # 2 + 1 + 0 + 0
 print(f(12))
     
     
+
+
+def unique_character(string): # return {key : character, valueur: nb} d'occurences dans le string 
+    frequency = {}
+    string = string.lower()
+    for i in string: # i is character 
+        if i not in frequency:
+            # frequency[key] = value
+            frequency[i] = 1
+        else : 
+            frequency[i] += 1
+    print(frequency)
+    user = input("give me a character : ")
+    print(f"{user} is present {frequency[user]} times in the dictionnary")
+            
+        
+ex = "Patrick,Emma,Maria,iyqrgfliREGQEFRGKJhjgfuyfkuevflzjkgflizfb"
+unique_character(ex)
